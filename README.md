@@ -264,3 +264,39 @@ This project is licensed under the MIT License.
 ---
 
 **Happy Polling! 🗳️**
+
+## 🤖 AI Usage
+
+This project meaningfully used AI tools throughout development to speed up iteration and improve quality. Highlights:
+
+- **In-IDE Assistance (Cursor / GitHub Copilot)**
+
+  - Scaffolding React Server Components and client components in the `app/` and `components/` directories
+  - Generating form logic and validation for poll creation and authentication flows
+  - Refactoring TypeScript types in `lib/types/*` and services under `lib/db/*`
+  - Authoring documentation drafts (README sections, troubleshooting notes)
+
+- **API-aware Generation**
+
+  - Prompted the assistant to generate client-side helpers for Supabase (see `lib/supabase/*`)
+  - Drafted types and minimal service wrappers for poll CRUD in `lib/db/pollService.ts`
+
+- **AI-powered Code Review**
+
+  - Performed pre-commit diffs and asked the assistant for potential edge cases and improvements
+  - Focus areas: error handling, RLS assumptions, and component state synchronization
+
+- **Documentation & Docstrings**
+  - Used the assistant to suggest structure and phrasing for this README and `database/README.md`
+
+### Commit Guidelines
+
+- Conventional Commits style, e.g. `feat: add vote-on-poll logic`, `fix: correct RLS policy check`
+- AI-assisted commit message generation for clarity and scope
+- Keep changesets focused and incremental
+
+### Evidence of AI Workflows
+
+- Iterative prompts to scaffold forms and server actions
+- Assistant-aided review of `components/polls/*` for state and accessibility
+- README and reflection authoring support
